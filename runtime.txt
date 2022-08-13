@@ -1,0 +1,33 @@
+extraLargeArray - .push 
+
+insert 669.335 s
+append 3.13 ms
+
+LargeArray - .push
+
+insert 8.2262 ms
+append 531.5 μs
+
+mediumArray - .push 
+insert 148.2 μs
+append 105.2 μs
+
+smallArray - .unshift 
+insert 49.7 μs
+append 99.5 μs
+
+Results for the tinyArray - .unshift 
+insert 39.1 μs
+append 84.2 μs
+
+
+
+Overall: 
+
+The amount starts off faster than the append function. While this happened  it stays relatively fast and small as it scales up.
+
+By using the .push is faster to increase exponentially, while append stays relatively fast and small as it scales up for the extraLargeArray, LargeArray, and mediumArray. 
+
+.unshift adds the first item to position 0 which is faster for the smallArray, and .unshift is faster for the tinyArray
+
+
